@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+    <title>Document</title>
+
+    <!--Funciones de JavaScript-->
+    <script>
+        function btnvolver() {
+            window.open('panel.html', "_self");
+        }
+
+        function btnSave() {
+            window.open('guardarBitacora.php', "_self");
+        }   
+    </script>
+
+</head>
+
+<body class="body-Operativo">
+
+    <div class="header-spy">
+        <a href="https://spy4u.com.mx"><img src="https://www.spy4u.com.mx/img/spy4u-logo/logo.png" alt="spy4u-logo"
+                class="logo-spy"></a>
+    </div>
+
+    <br>
+
+    <div class="titlex-Operativo">
+        <h1 style="color:rgb(0, 0, 0)"><b>REGISTRO OPERATIVO</b></h1>
+    </div>
+
+    <center>
+
+        <form method="post" action="guardarBitacora.php" enctype="multipart/form-data">
+
+            <div class="caja-type-Operativo">
+
+
+                <div class="clients">
+                    <h5>Cliente:</h5>
+                    <SELECT id="serviciosx" name="serviciosy" style="width: 210PX;" required>
+                        <OPTION value="AAADAM">AAADAM</OPTION>
+                        <OPTION value=" Almacenes DC">Almacenes DC</OPTION>
+                        <OPTION value="Angeli Torcha">Angeli Torcha</OPTION>
+                        <OPTION value="Best Trading">Best Trading</OPTION>
+                        <OPTION value="Casa Name">Casa Name</OPTION>
+                        <OPTION value="CCO Altavista">CCO Altavista</OPTION>
+                        <OPTION value="Chacurteria">Chacurteria</OPTION>
+                        <OPTION value="Chilemex">Chilemex</OPTION>
+                        <OPTION value="City Office">City Office</OPTION>
+                        <OPTION value="Cusa">Cusa</OPTION>
+                        <OPTION value="Gapa">Gapa</OPTION>
+                        <OPTION value="GN10">GN10</OPTION>
+                        <OPTION value="Iberia">Iberia</OPTION>
+                        <OPTION value="Joyeros Emblematicos">Joyeros Emblematicos</OPTION>
+                        <OPTION value="Krispy Kreme">Krispy Kreme</OPTION>
+                        <OPTION value="Leon Weill">Leon Weill</OPTION>
+                        <OPTION value="Modatelas">Modatelas</OPTION>
+                        <OPTION value="Monte Everest 120">Monte Everest 120</OPTION>
+                        <OPTION value="Mumuso">Mumuso</OPTION>
+                        <OPTION value="Oro Florentino">Oro Florentino</OPTION>
+                        <OPTION value="Papeles Planos">Papeles Planos</OPTION>
+                        <OPTION value="Promologistics">Promologistics</OPTION>
+                        <OPTION value="Punto y Coma">Punto y Coma</OPTION>
+                        <OPTION value="Rhino">Rhino</OPTION>
+                        <OPTION value="Ribbon">Ribbon</OPTION>
+                        <OPTION value="Rosa Negra">Rosa Negra</OPTION>
+                        <OPTION value="Salomon Cassab">Salomon Cassab</OPTION>
+                        <OPTION value="Samsonite">Samsonite</OPTION>
+                        <OPTION value="Sellcom">Sellcom</OPTION>
+                        <OPTION value="Simjis">Simjis</OPTION>
+                        <OPTION value="Solulogis">Solulogis</OPTION>
+                        <OPTION value="SPA Dania">SPA Dania</OPTION>
+                        <OPTION value="Teatro San Rafael">Teatro San Rafael</OPTION>
+                        <OPTION value="UCA">UCA</OPTION>
+                        <OPTION value="Usana">Usana</OPTION>
+                        <OPTION value="VI Logistica">Logistica</OPTION>
+
+                        <OPTION value="" selected></OPTION>
+                    </SELECT>
+                </div>
+
+
+
+                <div class="sucs">
+                    <h5>Sucursal:</h5>
+                    <SELECT id="sucursalesx" name="sucursalesy" style="width: 210PX;" required>
+                        <OPTION value="N/A">N/A</OPTION>
+
+                        <OPTION value="" selected></OPTION>
+                    </SELECT>
+                </div>
+
+                <div class="categorias">
+                    <h5>Clasificacion de reporte:</h5>
+                    <SELECT id="categoriasx" name="categoriasy" style="width: 210PX;" required>
+                        <OPTION value="Abastecimiento de producto">Abastecimiento de producto</OPTION>
+                        <OPTION value="Accesos vigilados">Accesos vigilados</OPTION>
+                        <OPTION value="Activacion de alarma">Activacion de alarma</OPTION>
+                        <OPTION value="Actividades nocturnas">Actividades nocturnas</OPTION>
+                        <OPTION value="Agresion Fisica / Riña">Agresion Fisica / Riña</OPTION>
+                        <OPTION value="Agresion Sexual / Acoso">Agresion Sexual / Acoso</OPTION>
+                        <OPTION value="Aperturas y cierres">Aperturas y cierres</OPTION>
+                        <OPTION value="Arma de fuego">Arma de fuego</OPTION>
+                        <OPTION value="Asalto">Asalto</OPTION>
+                        <OPTION value="Botones de panico">Botones de panico</OPTION>
+                        <OPTION value="Buenas practicas de manufactura">Buenas practicas de manufactura</OPTION>
+                        <OPTION value="Cambio de escena">Cambio de escena</OPTION>
+                        <OPTION value="Cargas y descargas">Cargas y descargas</OPTION>
+                        <OPTION value="Conductas y comportamientos">Conductas y comportamientos</OPTION>
+                        <OPTION value="Deceso">Deceso</OPTION>
+                        <OPTION value="Desconexion de dispositivo">Desconexion de dispositivo</OPTION>
+                        <OPTION value="Disturbio">Disturbio</OPTION>
+                        <OPTION value="Emergencia medica">Emergencia medica</OPTION>
+                        <OPTION value="Evento en exterior">Evento en exterior</OPTION>
+                        <OPTION value="Explosion">Explosion</OPTION>
+                        <OPTION value="Extorsion telefonica">Extorsion telefonica</OPTION>
+                        <OPTION value="Falla en equipo o dispositivo">Falla en equipo o dispositivo</OPTION>
+                        <OPTION value="Funciones de elementos de seguridad">Funciones de elementos de seguridad</OPTION>
+                        <OPTION value="Incendio">Incendio</OPTION>
+                        <OPTION value="Incumplimiento de protocolos">Incumplimiento de protocolos</OPTION>
+                        <OPTION value="Informativo">Informativo</OPTION>
+                        <OPTION value="Ingresos nocturnos">Ingresos nocturnos</OPTION>
+                        <OPTION value="Ingresos y salidas de personal">Ingresos y salidas de personal</OPTION>
+                        <OPTION value="Intermitencia en dispositivos">Intermitencia en dispositivos</OPTION>
+                        <OPTION value="Intrusion">Intrusion</OPTION>
+                        <OPTION value="Malas practicas">Malas practicas</OPTION>
+                        <OPTION value="Mantenimientos">Mantenimientos</OPTION>
+                        <OPTION value="Obstruccion de dispositivo">Obstruccion de dispositivo</OPTION>
+                        <OPTION value="Orden y limpieza">Orden y limpieza</OPTION>
+                        <OPTION value="Personas sospechosas">Personas sospechosas</OPTION>
+                        <OPTION value="Prescencia de SSP">Prescencia de SSP</OPTION>
+                        <OPTION value="Prevencion de riesgos laborales">Prevencion de riesgos laborales</OPTION>
+                        <OPTION value="Protocolos Covid-19">Protocolos Covid-19</OPTION>
+                        <OPTION value="Reconexion de dispositivo">Reconexion de dispositivo</OPTION>
+                        <OPTION value="Revision de personal">Revision de personal</OPTION>
+                        <OPTION value="Revision de video">Revision de video</OPTION>
+                        <OPTION value="Robo">Robo</OPTION>
+                        <OPTION value="Seguimiento de video">Seguimiento de video</OPTION>
+                        <OPTION value="Sustraccion de almacen">Sustraccion de almacen</OPTION>
+                        <OPTION value="Uso de celular">Uso de celular</OPTION>
+                        <OPTION value="Uso de uniforme">Uso de uniforme</OPTION>
+
+                        <OPTION value="" selected></OPTION>
+                    </SELECT>
+                </div>
+
+                <div class="txtRegs">
+                    <textarea cols="60" rows="3" class="textbox" name="textbox1" id="textbox1"
+                        placeholder="Añadir descripcion..." required></textarea>
+                </div>
+
+                <div class="txtRegs">
+                    <h5>Realizo registro:</h5>
+                    <SELECT id="operadory" name="operadory" style="width: 210PX;" required>
+                        <OPTION value="Anahely Ramírez Caballero">Anahely Ramírez Caballero</OPTION>
+                        <OPTION value="Arely Fuentes Hernández">Arely Fuentes Hernández</OPTION>
+                        <OPTION value="Diana Meléndez Cervantes">Diana Meléndez Cervantes</OPTION>
+                        <OPTION value="Esther Romero Ríos">Esther Romero Ríos</OPTION>
+                        <OPTION value="Janet Hernández Martínez">Janet Hernández Martínez</OPTION>
+                        <OPTION value="Jessica Mendoza">Jessica Mendoza</OPTION>
+                        <OPTION value="Juan Carlos Velázquez">Juan Carlos Velázquez</OPTION>
+                        <OPTION value="Madai Vidal Pérez">Madai Vidal Pérez</OPTION>
+                        <OPTION value="María José Peña Apanco">María José Peña Apanco</OPTION>
+                        <OPTION value="Marisol Ramírez Caballero">Marisol Ramírez Caballero</OPTION>
+                        <OPTION value="Yadira Aidé Villegas Martínez">Yadira Aidé Villegas Martínez</OPTION>
+                        <OPTION value="-----">-----</OPTION>
+
+                        <OPTION value="" selected></OPTION>
+                    </SELECT>
+                </div>
+
+                <div class="txtRegs">
+                    <textarea cols="60" rows="3" class="textbox" name="textbox2" id="textbox2"
+                        placeholder="Añadir observaciones..." required></textarea>
+                </div>
+
+            </div>
+
+
+            <input type="file" class="form-control" id="image-Bitacora" name="image-Bitacora" multiple />
+            <br>
+            <input name="btn-guardar" type="submit" value="Guardar"  class="btnsave"/>
+
+            <input type="button" value="Volver" onclick="location.href='javascript:btnvolver()'" class="btnback">
+
+
+        </form>
+
+    </center>
+
+
+
+
+
+    <div id="dropDownSelect1" class="dropdown">
+        <p><b>SPY4U COMMAND CENTER SAPI S.A. DE C.V. | 2022</b></p>
+    </div>
+
+</body>
+
+</html>
